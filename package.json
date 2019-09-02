@@ -1,0 +1,9 @@
+{
+  "name": "hiru0209gcpstoragetoaws",
+  "version": "1.0.0",
+  "dependencies": {
+    "googleapis": "29.0.0",
+    "aws-sdk": "2.176.0"
+  },
+  "devDependencies": {}
+}
