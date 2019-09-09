@@ -12,7 +12,8 @@ exports.handler = function (request, response) {
     })
         .then(response => {
             console.log(response.data);
-            content = response.data;          // successful response
+            content = response.data;
+            response.send({ "message": "Successfully executed " + response.data });         // successful response
             /*
             response.data = {
                 "kind": "storage#object",
@@ -59,11 +60,12 @@ exports.handler = function (request, response) {
 
         })
         .catch(err => {
-            console.log(err, err.stack); // an error occurred
+            console.log(err, err.stack);
+            response.send({ "message": "an error ocurred " + err.stack }); // an error occurred
         });
 
 
 
 
-    response.send({ "message": "Successfully executed" });
+    
 }
