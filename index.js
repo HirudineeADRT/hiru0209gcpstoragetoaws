@@ -2,3 +2,4 @@
 // DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.
 
 exports.hiru0209gcpstoragetoawsfunction = require("./hiru0209gcpstoragetoaws/function.js").handler;
+exports.hiru0209gcpstoragetoawstest = require("./hiru0209gcpstoragetoaws/test.js").handler;

@@ -13,7 +13,7 @@ exports.handler = function (request, response) {
         .then(response => {
             console.log(response.data);
             content = response.data;
-            response.send({ "message": "Successfully executed " + response.data });         // successful response
+                    // successful response
             /*
             response.data = {
                 "kind": "storage#object",
@@ -65,7 +65,7 @@ exports.handler = function (request, response) {
         });
 
 
-
+        response.send({ "message": "Successfully executed " + response.data }); 
 
     
 }
